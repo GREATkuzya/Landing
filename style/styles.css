@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+}
+
+.div-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header-table {
+    list-style: none;
+    display: flex;
+}
+
+.header-table a {
+    display: inline; 
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    color: #FFFFFF;
+    margin-right: 47px;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background: #131313;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #E3B873;
+    height: 83px;
+
+}
+
+.button {
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    padding: 13px 33px;
+    /* margin: 0 auto; */
+    color: white;
+    text-transform: uppercase;
+}
+
+.button-prozr {
+    background: none;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 1px solid white;
+    padding: 13px 33px;
+    /* margin: 0 auto; */
+    color: white;
+    text-transform: uppercase;
+}
+
+.header-number {
+    margin-right: 45px;
+    }
+
+.main-section {
+background-image: url(../images/cover-sect1.jpg);
+background-size: cover;
+height: 707px;
+}
+
+.section-div-container-header {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 194px;
+}
