@@ -88,3 +88,12 @@ height: 707px;
     padding: 194px;
     margin: 0px;
 }
+
+.section-div-container p {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
