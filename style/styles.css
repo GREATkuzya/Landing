@@ -50,7 +50,7 @@ header {
     outline: 0;
     border: 0;
     padding: 13px 33px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     color: white;
     text-transform: uppercase;
 }
@@ -62,7 +62,7 @@ header {
     outline: 0;
     border: 1px solid white;
     padding: 13px 33px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     color: white;
     text-transform: uppercase;
 }
@@ -77,6 +77,11 @@ background-size: cover;
 height: 707px;
 }
 
+.section-div-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .section-div-container-header {
     font-family: Yeseva One;
     font-style: normal;
@@ -87,6 +92,10 @@ height: 707px;
     color: #FFFFFF;
     padding: 194px;
     margin: 0px;
+}
+
+.special-color {
+    color: #E3B873;
 }
 
 .section-div-container p {
