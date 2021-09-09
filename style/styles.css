@@ -72,15 +72,17 @@ header {
     }
 
 .main-section {
-background-image: url(../images/cover-sect1.jpg);
-background-size: cover;
-height: 707px;
+    background-image: url(../images/cover-sect1.jpg);
+    background-size: cover;
+    height: 707px;
 }
 
 .section-div-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    position: relative;
+    top: 194px;
+    left: 134px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .section-div-container-header {
@@ -91,7 +93,7 @@ height: 707px;
     line-height: 53px;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 194px;
+    /* padding: 194px; */
     margin: 0px;
 }
 
@@ -106,4 +108,14 @@ height: 707px;
     font-size: 22px;
     line-height: 36px;
     color: #FFFFFF;
+}
+
+.main-section::before {
+    content: '';
+    position: absolute;
+    top: 83px;
+    left: 0;
+    right: 0;
+    bottom: -54px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
