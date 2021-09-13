@@ -332,3 +332,36 @@ h3 {
     background: #FFFFFF;
     transform: rotate(90deg);
 }
+
+.form_input {
+    border: none;
+    border-bottom: 2px solid lightgrey;
+    margin-right: 30px;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+.form_input::placeholder {
+    color: rgb(0, 0, 0);
+    padding-bottom: 8px;
+  }
+
+#submit {
+    height: 51px;
+    width: 200px;
+}
+
+.form_name {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    align-items: flex-end;
+    justify-content: center;
+}
+.input_checkbox {
+    margin-top: 30px;
+    /* width: 100%; */
+    background-color: #E3B873;
+    border-radius: 1px;
+}
+
