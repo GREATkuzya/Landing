@@ -293,6 +293,7 @@ h3 {
     display:flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .name {
@@ -314,4 +315,20 @@ h3 {
     line-height: 37px;
     text-align: center;
     color: #363636;
+}
+
+.videoz {
+    margin-top: -434px;
+}
+
+.ellipse {
+    /* margin-top: -217px; */
+    background: #E3B873;
+    box-shadow: 0px 5px 30px rgba(227, 184, 115, 0.2);
+}
+
+.triangle {
+    /* margin-top: -217px; */
+    background: #FFFFFF;
+    transform: rotate(90deg);
 }
