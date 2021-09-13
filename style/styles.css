@@ -256,3 +256,62 @@ h3 {
     max-width: 1440px;
     margin: 0 auto;
 }
+
+.completed-projects-arrows {
+	display: flex;
+    margin-top: 25px;
+}
+
+.line {
+	margin-right: -7px;
+	margin-left: 15px;
+}
+
+.fline {
+	margin-left: -7px;
+	margin-right: 15px;
+}
+.less {
+	margin-top: 1px;
+}
+
+.dot {
+	margin: 0 15px;
+}
+
+.section-video {
+    margin: 0;
+    height: 1074px;
+}
+.camera {
+    display: flex;
+    margin: 15px;
+}
+
+.div-container-video {
+    margin-top: -300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    display: inline;
+
+}
+
+.linehr {
+    background: #E3B873;
+    border-radius: 30px;
+    margin: 50px auto;
+}
+
+.div-container-video p {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    color: #363636;
+}
