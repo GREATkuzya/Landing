@@ -85,8 +85,16 @@ header {
     height: 51px;
 }
 
-.header-number {
+.header-number a {
     margin-right: 45px;
+    color: #E3B873;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    text-decoration-line: underline;
     }
 
 .main-section {
