@@ -298,7 +298,7 @@ h3 {
 
 .name {
     display: inline;
-
+    margin-top: 50px;
 }
 
 .linehr {
@@ -354,14 +354,118 @@ h3 {
 .form_name {
     display: flex;
     flex-wrap: wrap;
-    width: 600px;
+    width: 700px;
     align-items: flex-end;
     justify-content: center;
 }
-.input_checkbox {
-    margin-top: 30px;
-    /* width: 100%; */
-    background-color: #E3B873;
-    border-radius: 1px;
+
+.checkbox-container {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    margin: 35px 0 auto;
+    align-items: center;
+    width: 50%;
+  }
+ /* немного выровняем текст подсказки */
+
+ #our_checkbox_label  {
+   margin-left:30px;
+   margin-top: 6px;
+ 
+ }
+
+/* прячем чекбокс по умолчанию */
+
+.checkbox-container input {
+    position: absolute;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
 
+/* оформляем кастомный чекбокс */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    height: 18px;
+    width: 18px;
+    border: 2px solid #E3B873;
+    cursor: pointer;
+    background: white;
+}
+/* При наведении мыши добавляем интерактивности*/
+.checkbox-container:hover input ~ .checkmark {
+    background-color: lightgrey;
+}
+  
+/* Когда галочка должна стоять - оформляем наш кастомный элемент должным образом*/
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #E3B873;
+}
+  
+/* внутренний индикатор для нашего чекбокса в ненажатом состоянии */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* показываем внутренний индикатор при нажатии */
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+/* и задаем стиль для внутреннего индикатора  - позволяет креативить по полной */
+.checkbox-container .checkmark:after {
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    /* border-radius: 2px; */
+}
+.galka {
+	z-index: 1;
+	position: absolute;
+	left: 4px;
+	top: 4px;
+}
+
+input, label{
+    display:block;
+}
+
+.input-label {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 21px;
+	color: rgba(54, 54, 54, 0.5);
+	transform: rotate(-0.07deg);
+}
+
+.section-types-of-repair {
+    margin: 0;
+    max-width: 1440px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.types-of-repair-header {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.types-of-repair-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    width: 1440px;
+}
