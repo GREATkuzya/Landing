@@ -469,3 +469,39 @@ input, label{
     position: relative;
     width: 1440px;
 }
+
+.decor-ul {
+    display: block;
+    position: relative;
+    width: 330px;
+    height: 286px;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    margin-top: -120px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+h4 {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+    margin: 0;
+    
+    padding-top: 25px;
+    padding-left: 34px;
+}
+
+.decor-ul ul {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+}
