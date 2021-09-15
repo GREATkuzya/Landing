@@ -505,3 +505,171 @@ h4 {
     line-height: 27px;
     color: #959595;
 }
+
+/* для второй формы стили ПОЧИСТИТЬ!!! */
+
+input, label{
+    display:block;
+}
+
+.input-label-request {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 21px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.form_input-request {
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+    margin: 0;
+	margin-bottom: 40px;
+    outline: none;
+    padding-bottom: 5px;
+	background-color: black;
+	color: white;
+	width: 408px;
+}
+
+.form_input-request::placeholder {
+    font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 23px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+  }
+
+#submit {
+    height: 51px;
+    width: 200px;
+}
+
+.form_name-request {
+    display: block;
+    width: 440px;
+	height: 509px;
+	background-color: black;
+	margin-bottom: 30px;
+	padding-left: 49px;
+	padding-right: 19px;
+}
+
+h5 {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 26px;
+	text-align: center;
+	color: #FFFFFF;
+	padding-top: 30px;
+
+}
+
+.button-request {
+	transform: translate(120px, 29px);
+}
+
+.checkbox-container-request {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    margin: 0 auto;
+    
+  }
+ /* немного выровняем текст подсказки */
+
+
+
+ #our_checkbox_label-request  {
+   margin-left:30px;
+   margin-top: 6px;
+   color: white;
+ 
+ }
+
+/* прячем чекбокс по умолчанию */
+
+.checkbox-container-request input {
+    position: absolute;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* оформляем кастомный чекбокс */
+
+.checkmark-request {
+    position: absolute;
+    top: 0;
+    height: 18px;
+    width: 18px;
+    border: 2px solid #E3B873;
+    cursor: pointer;
+    /* border-radius: 2px; */
+    background: white;
+}
+/* При наведении мыши добавляем интерактивности*/
+.checkbox-container-request:hover input ~ .checkmark-request {
+    background-color: lightgrey;
+}
+  
+/* Когда галочка должна стоять - оформляем наш кастомный элемент должным образом*/
+.checkbox-container-request input:checked ~ .checkmark-request {
+    /* border: 2px solid #E3B873; */
+    background-color: #E3B873;
+}
+  
+/* внутренний индикатор для нашего чекбокса в ненажатом состоянии */
+.checkmark-request:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* показываем внутренний индикатор при нажатии */
+.checkbox-container-request input:checked ~ .checkmark-request:after {
+    display: block;
+}
+  
+/* и задаем стиль для внутреннего индикатора  - позволяет креативить по полной */
+.checkbox-container-request .checkmark-request:after {
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    /* border-radius: 2px; */
+}
+.galka {
+	z-index: 1;
+	position: absolute;
+	left: 4px;
+	top: 4px;
+}
+
+/* поудалять лишние стили сверху */
+
+.advantage-list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url(../images/bg-image.jpg);
+    justify-content: space-around;
+}
+
+.advantage-form {
+    display: flex;
+    position:relative;
+    top: 220px;
+}
+
+.advantage {
+    display: flex;
+}
