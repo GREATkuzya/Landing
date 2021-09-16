@@ -690,6 +690,9 @@ h5 {
     font-size: 14px;
     line-height: 19px;
     color: #363636;
+    position: relative;
+    right: 25px;
+    top: 7px;
 }
 
 .help-save {
@@ -697,6 +700,7 @@ h5 {
     top: 120px;
     left: 900px;
     display: flex;
+    width: 350px;
 }
 
 .help-save p {
@@ -721,4 +725,50 @@ h5 {
     position: relative;
     right: 102px;
     top: 37px;
+}
+
+.advantage-digit {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    right: 52px;
+    top: 27px;
+}
+
+.section-realize {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    top: 322px;;
+}
+
+.realize-container {
+    position: relative;
+    background-image: url(../images/sect-realize.jpg);
+}
+
+.realize-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.american-ul li {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+    list-style: none;
+    text-decoration: none;
 }
