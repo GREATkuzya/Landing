@@ -166,6 +166,7 @@ h2 {
     letter-spacing: -0.07em;
     text-transform: uppercase;
     color: #E3B873;
+    position: relative;
 }
 
 h3 {
@@ -569,6 +570,7 @@ h5 {
 	text-align: center;
 	color: #FFFFFF;
 	padding-top: 30px;
+    position: relative;
 
 }
 
@@ -771,4 +773,14 @@ h5 {
     color: #FFFFFF;
     list-style: none;
     text-decoration: none;
+    position: relative;
+}
+
+.img-real {
+    position: relative;
+}
+
+.img-real1 {
+    top: 100px;
+    right: 100px;
 }
