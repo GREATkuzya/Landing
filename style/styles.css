@@ -746,12 +746,15 @@ h5 {
     max-width: 1440px;
     margin: 0 auto;
     position: relative;
-    top: 322px;;
+    top: 322px;
 }
 
 .realize-container {
     position: relative;
     background-image: url(../images/sect-realize.jpg);
+    background-size: 100% 100%;
+    width: 1440px;
+    height: 864px;
 }
 
 .realize-container::before {
@@ -774,6 +777,8 @@ h5 {
     list-style: none;
     text-decoration: none;
     position: relative;
+    margin-left: 62px;
+    top: 84px;
 }
 
 .img-real {
@@ -781,6 +786,50 @@ h5 {
 }
 
 .img-real1 {
-    top: 100px;
-    right: 100px;
+    bottom: 687px;
+    left: 578px;
+}
+
+.img-real2 {
+    bottom: 297px;
+    left: 218px;
+}
+
+.img-real3 {
+    bottom: 1042px;
+    left: 254px;
+}
+
+.img-real4 {
+    bottom: 379px;
+    right: 103px;
+}
+
+h5 {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 38px;
+    color: #E3B873;
+    text-align: left;
+    margin-left: 100px;
+    top: 112px;
+}
+
+h2 {
+    position: relative;
+    top: 129px;
+    left: 100px;
+}
+
+.our-clients {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    top: 322px;;
+}
+
+.client {
+    position: relative;
 }
