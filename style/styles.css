@@ -889,12 +889,25 @@ h6 {
 }
 
 .client-button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 293px;
     height: 54px;
     padding: 0;
     margin: 0;
     position: relative;
+    color: white;
     top: 89px;
+    background: #E3B873;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+
 }
 
 .client-img {
@@ -908,4 +921,32 @@ h6 {
     flex-direction: row;
     align-items: center;
     margin-left: 20px;
+}
+
+/* тут пошла последняя секция с формой и картой */
+
+.question-section {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    top: 430px;
+}
+
+.sky-img {
+    display: flex;
+    flex-wrap: nowrap;
+    opacity: .05;
+    /* color: #E6E6E6; */
+}
+
+.question-form {
+    display: block;
+    width: 883px;
+	height: 445px;
+	background-color: black;
+	padding-left: 49px;
+	padding-right: 19px;
+    position: relative;
+    margin: 0 auto;
+    bottom: 268px;
 }
