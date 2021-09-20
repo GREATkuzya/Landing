@@ -59,6 +59,7 @@ header, footer {
     line-height: 15px;
     text-align: center;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .button-prozr {
@@ -176,7 +177,7 @@ h3 {
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
-    color: #E3B873;
+    color: #FFFFFF;
     margin: 0;
 }
 
@@ -296,6 +297,8 @@ h3 {
     align-items: center;
     position: relative;
 }
+
+/* Тут начало первой формы */
 
 .name {
     display: inline;
@@ -536,10 +539,10 @@ input, label{
 
 .form_input-request::placeholder {
     font-family: Nunito Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 23px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
 /* identical to box height */
 
 
@@ -939,13 +942,52 @@ h6 {
     /* color: #E6E6E6; */
 }
 
+.question-form-input12 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 181px;
+}
+
+.question-form-input3 {
+    display: flex;
+    justify-content: center;
+}
+
+.question-form-input12 input {
+    width: 231px;
+    margin-left: 58px;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+    margin: 0;
+	margin-bottom: 40px;
+    outline: none;
+    padding-bottom: 5px;
+	background-color: black;
+	color: white;
+}
+
+.question-form h3 {
+    padding: 35px 0 50px 0;
+    text-align: center;
+}
+
+.question-form-input3 input {
+    width: 516px;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+    margin: 0;
+    outline: none;
+    padding-bottom: 5px;
+	background-color: black;
+	color: white;
+    
+}
+
 .question-form-div {
     display: block;
     width: 883px;
 	height: 445px;
 	background-color: black;
-	padding-left: 49px;
-	padding-right: 19px;
     position: relative;
     margin: 0 auto;
     bottom: 268px;
@@ -956,6 +998,79 @@ h6 {
     z-index: 1;
 }
 
+.question-button {
+    width: 200px;
+    height: 51px;
+}
+
+/* оформление еще одного чекбокса */
+
+.checkbox-container-question {
+    display: flex;
+    position: relative;
+    /* justify-content: center;    не работает долго разбираться почему, просто поправлю влево */
+    left: 308px;
+    cursor: pointer;
+    margin: 48px auto 48px auto;
+}
+
+/* оформляем кастомный чекбокс */
+
+.checkmark-question {
+    position: absolute;
+    top: 0;
+    height: 18px;
+    width: 18px;
+    border: 2px solid #E3B873;
+    cursor: pointer;
+    /* border-radius: 2px; */
+    background: white;
+}
+/* При наведении мыши добавляем интерактивности*/
+.checkbox-container-question:hover input ~ .checkmark-question {
+    background-color: lightgrey;
+}
+  
+/* Когда галочка должна стоять - оформляем наш кастомный элемент должным образом*/
+.checkbox-container-question input:checked ~ .checkmark-question {
+    /* border: 2px solid #E3B873; */
+    background-color: #E3B873;
+}
+  
+/* внутренний индикатор для нашего чекбокса в ненажатом состоянии */
+.checkmark-question:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* показываем внутренний индикатор при нажатии */
+.checkbox-container-question input:checked ~ .checkmark-question:after {
+    display: block;
+}
+  
+/* и задаем стиль для внутреннего индикатора  - позволяет креативить по полной */
+.checkbox-container-question .checkmark-question:after {
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    /* border-radius: 2px; */
+}
+
+.checkbox-container-question label {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 163.68%;
+    color: #FFFFFF;
+}
+
+#our_checkbox_label-question  {
+    margin-left: 10px;
+}
 /* Секция с картой */
 
 .map-sect {
