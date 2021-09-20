@@ -28,7 +28,7 @@ body {
     text-decoration: none;
 }
 
-header {
+header, footer {
     display: flex;
     justify-content: space-around;
     background: #131313;
@@ -923,7 +923,7 @@ h6 {
     margin-left: 20px;
 }
 
-/* тут пошла последняя секция с формой и картой */
+/* тут пошла последняя  с формой и картой */
 
 .question-section {
     max-width: 1440px;
@@ -939,7 +939,7 @@ h6 {
     /* color: #E6E6E6; */
 }
 
-.question-form {
+.question-form-div {
     display: block;
     width: 883px;
 	height: 445px;
@@ -949,4 +949,43 @@ h6 {
     position: relative;
     margin: 0 auto;
     bottom: 268px;
+}
+
+.question-form {
+    position: relative;
+}
+
+/* Секция с картой */
+
+.map-sect {
+    background-image: url(../images/map-cover.jpg);
+    background-size: cover;
+    height: 953px;
+    position: relative;
+}
+
+.map-sect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.map-div {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 274px;
+}
+
+.link-img {
+    display: flex;
+    justify-content: space-around;
 }
