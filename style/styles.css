@@ -112,19 +112,10 @@ header, footer {
 .section-div-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    max-width: 1440px;
+    max-width: 1128px;
     margin: 0 auto;
     padding: 194px 134px;
     position: relative;
-    /* display: block;
-    position: relative;
-    padding: 194px 134px;
-    margin: 0;
-    width: 676px;
-    height: 300px;
-    max-width: 1440px; */
 }
 
 .section-div-container-header {
@@ -226,9 +217,14 @@ h3 {
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
-    color: #E3B873;
+    color: rgba(255, 255, 255, 0.3);
     text-decoration: none;
     margin-right: 80px;
+}
+
+.table-comleted-projects li > a:hover {
+    color: #E3B873;
+    text-decoration-line: underline;
 }
 
 .completed-projects-flex {
@@ -330,15 +326,13 @@ h3 {
 }
 
 .ellipse {
-    /* margin-top: -217px; */
-    background: #E3B873;
-    box-shadow: 0px 5px 30px rgba(227, 184, 115, 0.2);
+    position: absolute;
+    top: 227px;
 }
 
 .triangle {
-    /* margin-top: -217px; */
-    background: #FFFFFF;
-    transform: rotate(90deg);
+    position: absolute;
+    top: 281px;
 }
 
 .form_input {
@@ -352,6 +346,11 @@ h3 {
 .form_input::placeholder {
     color: rgb(0, 0, 0);
     padding-bottom: 8px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
   }
 
 #submit {
@@ -379,7 +378,12 @@ h3 {
 
  #our_checkbox_label  {
    margin-left:30px;
-   margin-top: 6px;
+   margin-top: 4px;
+   font-family: Nunito Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 23px;
  
  }
 
@@ -461,6 +465,7 @@ input, label{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
     
 }
 
@@ -512,6 +517,23 @@ h4 {
     font-size: 13px;
     line-height: 27px;
     color: #959595;
+}
+
+.decor-no-button {
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    outline: 0;
+    border: 0;
+    color: white;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 228px;
+    height: 54px;    
 }
 
 /* для второй формы стили ПОЧИСТИТЬ!!! */
@@ -600,7 +622,11 @@ h5 {
    margin-left:30px;
    margin-top: 6px;
    color: white;
- 
+   font-family: Nunito Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 23px;
  }
 
 /* прячем чекбокс по умолчанию */
@@ -665,21 +691,11 @@ h5 {
 
 /* поудалять лишние стили сверху */
 
-.advantage-list {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background-image: url(../images/bg-image.png);
-    background-size: 100% 100%;
-    height: 650px;
-    width: 650px;
-    top: -100px;
-}
 
 .advantage-form {
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-right: 50px;
     top: 220px;
 }
@@ -692,6 +708,8 @@ h5 {
     position: relative;
 }
 
+.advantage .advantage-description p { vertical-align: middle;} 
+
 .advantage p {
     font-family: Nunito Sans;
     font-style: normal;
@@ -701,13 +719,50 @@ h5 {
     color: #363636;
     position: relative;
     right: 25px;
-    top: 7px;
+    top: 7px;  
+}
+.advantage-list p:nth-child(2) {
+    /* font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px; */
+    color: yellow;
+    /* color: #363636; */
+    position: relative;
+    right: 25px;
+    top: 29px;
+}
+
+.advantage-list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url(../images/bg-image.png);
+    background-size: 100% 100%;
+    height: 650px;
+    width: 650px;
+    bottom: 100px;
+    right: 59px;
+}
+
+.advantage-digit {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    right: 55px;
+    top: 27px;
 }
 
 .help-save {
     position: relative;
     top: 120px;
-    left: 640px;
+    left: 840px;
     display: flex;
     width: 350px;
 }
@@ -736,18 +791,7 @@ h5 {
     top: 37px;
 }
 
-.advantage-digit {
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    color: #FFFFFF;
-    position: relative;
-    right: 52px;
-    top: 27px;
-}
+
 
 .section-realize {
     max-width: 1440px;
@@ -785,31 +829,32 @@ h5 {
     text-decoration: none;
     position: relative;
     margin-left: 62px;
+    margin-top: 12px;
     top: 84px;
 }
 
 .img-real {
-    position: relative;
+    position: absolute;
 }
 
 .img-real1 {
-    bottom: 687px;
+    bottom: 331px;
     left: 578px;
 }
 
 .img-real2 {
-    bottom: 297px;
-    left: 218px;
+    bottom: -51px;
+    left: 578px;
 }
 
 .img-real3 {
-    bottom: 1042px;
-    left: 254px;
+    bottom: 694px;
+    left: 967px;
 }
 
 .img-real4 {
-    bottom: 379px;
-    right: 103px;
+    bottom: 33px;
+    right: 118px;
 }
 
 .realize-container h5 {
@@ -955,14 +1000,15 @@ h6 {
 .question-form-input3 {
     display: flex;
     justify-content: center;
+
 }
 
 .question-form-input12 input {
     width: 231px;
-    margin-left: 58px;
+    /* margin-left: 58px; */
     border: none;
     border-bottom: 2px solid rgba(255, 255, 255, 0.15);
-    margin: 0;
+    /* margin: 0; */
 	margin-bottom: 40px;
     outline: none;
     padding-bottom: 5px;
@@ -985,6 +1031,15 @@ h6 {
 	background-color: black;
 	color: white;
     
+}
+
+.question-form input::placeholder {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: white;
 }
 
 .question-form-div {
@@ -1074,6 +1129,11 @@ h6 {
 
 #our_checkbox_label-question  {
     margin-left: 10px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
 }
 /* Секция с картой */
 
