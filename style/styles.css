@@ -28,6 +28,10 @@ body {
     text-decoration: none;
 }
 
+.header-table li > a:hover {
+    color: #E3B873;
+}
+
 header, footer {
     display: flex;
     justify-content: space-around;
@@ -700,43 +704,19 @@ h5 {
     top: 220px;
 }
 
+/* тут пойдет переделанный advantage */
+
 .advantage {
-    display: flex;
-    margin-left: 221px;
-    margin-top: 57px;
-    top: 43px;
-    position: relative;
-}
-
-.advantage .advantage-description p { vertical-align: middle;} 
-
-.advantage p {
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-    color: #363636;
-    position: relative;
-    right: 25px;
-    top: 7px;  
-}
-.advantage-list p:nth-child(2) {
-    /* font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px; */
-    color: yellow;
-    /* color: #363636; */
-    position: relative;
-    right: 25px;
-    top: 29px;
+	display: flex;
+	position: relative;
+    top: 24px;
+    left: 223px;
 }
 
 .advantage-list {
-    display: flex;
+	display: flex;
     flex-direction: column;
+	justify-content: space-around;
     position: relative;
     background-image: url(../images/bg-image.png);
     background-size: 100% 100%;
@@ -747,16 +727,37 @@ h5 {
 }
 
 .advantage-digit {
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    color: #FFFFFF;
-    position: relative;
-    right: 55px;
-    top: 27px;
+	background: #E3B873;
+	border: 8px solid #FFFFFF;
+	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+	border-radius: 30px;
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	color: #FFFFFF;
+	width: 55px;
+	height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 13px;
+	box-sizing: border-box;
+}
+
+.advantage p {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	vertical-align: middle;
+	color: #363636;
+	margin-left: 5px;
+	margin-top: auto;
+    margin-bottom: auto;
 }
 
 .help-save {
@@ -1170,9 +1171,18 @@ h6 {
     justify-content: space-around;
     width: 70px;
     margin: 30px auto;
+    z-index: 1;
+}
+
+.link-img a:hover {
+    opacity: 0.5;
 }
 
 .map-header {
     margin-top: 62px;
     text-align: center;
+    z-index: 1;
+    color: #E3B873;
+    font-size: 20px;
+    line-height: 28px;
 }
