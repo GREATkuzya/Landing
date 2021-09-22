@@ -173,11 +173,16 @@ h3 {
     font-family: Yeseva One;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: black;
     margin: 0;
+}
+
+.h3-white {
+    color: white;
 }
 
 .completed-projects p {
@@ -1187,4 +1192,64 @@ h6 {
     color: #E3B873;
     font-size: 20px;
     line-height: 28px;
+}
+
+@media screen and (max-width: 500px){
+    .header-table {
+        display: none;
+    }
+
+    .table-comleted-projects {
+        display: none;
+    }
+
+    .completed-projects-arrows {
+        display: none;
+    }
+
+    .advantage-form {
+        display: none;
+    }
+
+    .help-save {
+        display: none;
+    }
+
+    .american-ul {
+        display: none;
+    }
+
+    .img-real {
+        display: none;
+    }
+
+    .our-clients {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .request-button {
+        display: none;
+    }
+
+    * {
+        max-width: 375px;
+    }
+
+    .div-container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 18px;
+    }
+    header {
+        height: 57px;
+        display: inline-block;
+    }
+
+    .header-number a {
+        margin-right: 0;
+    }
 }
