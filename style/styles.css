@@ -332,11 +332,13 @@ h3 {
 .ellipse {
     position: absolute;
     top: 227px;
+    cursor: pointer;
 }
 
 .triangle {
     position: absolute;
     top: 281px;
+    cursor: pointer;
 }
 
 .form_input {
