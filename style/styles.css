@@ -1,3 +1,5 @@
+@media screen and (min-width: 375px){
+
 body {
     margin: 0;
 }
@@ -288,6 +290,10 @@ h3 {
 
 .dot {
 	margin: 0 15px;
+}
+
+.img-chair {
+    display: none;
 }
 
 .section-video {
@@ -1193,8 +1199,12 @@ h6 {
     font-size: 20px;
     line-height: 28px;
 }
-
-@media screen and (max-width: 500px){
+}
+@media screen and (max-width: 375px){
+    .section-types-of-repair, .section-realize , .our-clients, .question-section, .map-sect {
+        display: none;
+    }
+    
     .header-table {
         display: none;
     }
@@ -1235,21 +1245,201 @@ h6 {
         display: none;
     }
 
+    .sky-img {
+        display: none;
+    }
+
     * {
         max-width: 375px;
     }
 
-    .div-container {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 18px;
-    }
-    header {
-        height: 57px;
-        display: inline-block;
+    body {
+        margin: 0;
+        font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        width: 375px;
     }
 
-    .header-number a {
-        margin-right: 0;
+    h1, h2, h3, h4, h5, h6 {
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
     }
+/* тут начал писать стили для header */
+
+
+
+    .div-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-transform: uppercase;
+        color: #E3B873;
+        background: #131313;
+        font-size: 11px;
+        line-height: 15px;
+        width: 375px;
+        height: 57px;
+    }
+    header a {
+        font-size: 11px;
+        line-height: 15px;
+        color: #FFFFFF;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    header a:hover {
+        color: #E3B873;
+    }
+
+/* Тут идет первая секция с заголовком */
+
+    .main-section {
+        background-image: url(../images/cover-sect1.jpg);
+        background-size: cover;
+        height: 476px;
+        width: 375px;
+        position: relative;
+    }
+
+    .main-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .section-div-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+        position: relative;
+        width: 339px;
+    }
+
+    .section-div-container-header {
+        font-family: Yeseva One;
+        font-size: 23px;
+        line-height: 132.83%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 85px;
+        }
+        
+    .special-color {
+       color: #E3B873;
+        }
+
+    .main-section p {
+        font-size: 14px;
+        line-height: 135.84%;
+        color: #FFFFFF;
+    }
+    .section-button {
+        background: #E3B873;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+        border-radius: 2px;
+        outline: 0;
+        border: 0;
+        /* padding: 13px 33px; */
+        margin-top: 26px;
+        color: white;
+        font-style: italic;
+        font-size: 11px;
+        line-height: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        width: 344px;
+        height: 51px;
+    }
+
+    .section-button:hover {
+        background: none;
+        border: 1px solid white;
+    }    
+
+    .none {
+        display: none;
+    }
+
+    .section-div-container div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    /* тут пошла секция .completed-projects */
+
+    .completed-projects {
+        background-color: black;
+        margin: 0;
+        height: 727px;
+    }
+
+     h2 {
+        font-size: 22px;
+        line-height: 138.6%;
+        letter-spacing: -0.07em;
+        text-transform: uppercase;
+        color: #E3B873;
+        margin: 0;
+        padding-top: 36px;
+        text-align: center;
+     }
+   .completed-projects-flex p {
+        font-size: 11px;
+        line-height: 158.48%;    
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 22px;
+  }
+    .apartment-area {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        top: 300px;
+    }
+
+    .apartment-area h3 {
+        font-size: 14px;
+        line-height: 138.6%;
+        text-transform: uppercase;
+        color: #E3B873;
+    }
+
+    .apartment-area span {
+        font-size: 11px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+
+    .completed-projects-items-div {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin-top: 36px;
+        margin-left: 18px;
+    }
+
+    .completed-projects-div img:nth-child(2) {
+        display: none;
+    }
+
+    .img-chair {
+        display: block;
+        text-align: center;
+        position: relative;
+        bottom: 140px;
+        width: 340px;
+        height: 241px;
+        margin: 0 auto;
+    }
+  /* тут пошла секция online control */
 }
