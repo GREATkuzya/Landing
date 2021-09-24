@@ -3,6 +3,9 @@
 body {
     margin: 0;
 }
+.play-video {
+    display: none;
+}
 
 .div-container {
     display: flex;
@@ -337,7 +340,7 @@ h3 {
 }
 
 .videoz {
-    margin-top: -434px;
+    margin-top: -438px;
 }
 
 .ellipse {
@@ -1217,6 +1220,10 @@ h6 {
         display: none;
     }
 
+    .videoz, .ellipse, .triangle {
+        display: none;
+    }
+
     .advantage-form {
         display: none;
     }
@@ -1265,6 +1272,7 @@ h6 {
         font-family: Yeseva One;
         font-style: normal;
         font-weight: normal;
+        margin: 0;
     }
 /* тут начал писать стили для header */
 
@@ -1388,7 +1396,6 @@ h6 {
         letter-spacing: -0.07em;
         text-transform: uppercase;
         color: #E3B873;
-        margin: 0;
         padding-top: 36px;
         text-align: center;
      }
@@ -1442,4 +1449,191 @@ h6 {
         margin: 0 auto;
     }
   /* тут пошла секция online control */
+
+    .section-video {
+        height: 825px;
+        background-color: black;
+        margin: 0;
+    }
+
+    .h3-white {
+        color: white;
+        font-size: 22px;
+        line-height: 138.6%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .camera {
+        display: flex;
+        margin: 15px;
+        justify-content: center;
+    }
+
+    .videoimg {
+        width: 340px;
+        height: 207px;
+    }
+
+    .video-div::before {
+        content: '';
+        position: absolute;
+        width: 340px;
+        height: 207px;
+        top: 89px;
+        left: 18px;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .div-container-video {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .play-video {
+        position: absolute;
+        top: 150px;
+        cursor: pointer;
+
+    }
+
+    .linehr {
+        margin-top: 28px;
+    }
+
+    .div-container-video p {
+        font-size: 11px;
+        line-height: 169.8%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    /* тут начало первой формы */
+
+    .form_input {
+        border: none;
+        border-bottom: 2px solid lightgrey;
+        outline: none;
+        padding-bottom: 5px;
+        background-color: black;
+        color: white;
+        width: 340px;
+    }
+    
+    .form_input::placeholder {
+        color: rgb(0, 0, 0);
+        padding-bottom: 8px;
+        font-family: Nunito Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 23px;
+      }
+    
+    #submit {
+        height: 51px;
+        width: 340px;
+        background-color: #E3B873;
+        position: absolute;
+        top: 801px;
+        color: white;
+        border: none;
+    }
+    
+    .form_name {
+        display: flex;
+        flex-wrap: wrap;
+        width: 700px;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+    .checkbox-container {
+        display: flex;
+        position: relative;
+        cursor: pointer;
+        margin: 35px 0 auto;
+      }
+     /* немного выровняем текст подсказки */
+    
+     #our_checkbox_label  {
+       margin-left:30px;
+       margin-top: 4px;
+       font-size: 14px;
+        line-height: 163.68%;
+       color:white;
+     }
+    
+    /* прячем чекбокс по умолчанию */
+    
+    .checkbox-container input {
+        position: absolute;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    
+    /* оформляем кастомный чекбокс */
+    
+    .checkmark {
+        position: absolute;
+        top: 0;
+        height: 18px;
+        width: 18px;
+        border: 2px solid #E3B873;
+        cursor: pointer;
+        background: white;
+    }
+    /* При наведении мыши добавляем интерактивности*/
+    .checkbox-container:hover input ~ .checkmark {
+        background-color: lightgrey;
+    }
+      
+    /* Когда галочка должна стоять - оформляем наш кастомный элемент должным образом*/
+    .checkbox-container input:checked ~ .checkmark {
+        background-color: #E3B873;
+    }
+      
+    /* внутренний индикатор для нашего чекбокса в ненажатом состоянии */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+      
+    /* показываем внутренний индикатор при нажатии */
+    .checkbox-container input:checked ~ .checkmark:after {
+        display: block;
+    }
+      
+    /* и задаем стиль для внутреннего индикатора  - позволяет креативить по полной */
+    .checkbox-container .checkmark:after {
+        left: 0;
+        top: 0;
+        width: 18px;
+        height: 18px;
+        background: #E3B873;
+        /* border-radius: 2px; */
+    }
+    .galka {
+        z-index: 1;
+        position: absolute;
+        left: 4px;
+        top: 4px;
+    }
+    
+    input, label{
+        display:block;
+    }
+    
+    .input-label {
+        font-size: 13px;
+        line-height: 21px;
+        color: rgba(255, 255, 255, 0.5);
+        transform: rotate(-0.07deg);
+    }
 }
