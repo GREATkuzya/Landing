@@ -1,9 +1,13 @@
-@media screen and (min-width: 375px){
+@media screen and (min-width: 376px){
 
 body {
     margin: 0;
 }
 .play-video {
+    display: none;
+}
+
+.realize-shkaf {
     display: none;
 }
 
@@ -1203,8 +1207,8 @@ h6 {
     line-height: 28px;
 }
 }
-@media screen and (max-width: 375px){
-    .section-types-of-repair, .section-realize , .our-clients, .question-section, .map-sect {
+@media screen and (max-width: 376px){
+    .our-clients, .question-section, .map-sect {
         display: none;
     }
     
@@ -1441,7 +1445,6 @@ h6 {
 
     .img-chair {
         display: block;
-        text-align: center;
         position: relative;
         bottom: 140px;
         width: 340px;
@@ -1478,10 +1481,10 @@ h6 {
     .video-div::before {
         content: '';
         position: absolute;
-        width: 340px;
+        width: 341px;
         height: 207px;
         top: 89px;
-        left: 18px;
+        left: 17px;
         right: 0;
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.7);
@@ -1556,7 +1559,7 @@ h6 {
         display: flex;
         position: relative;
         cursor: pointer;
-        margin: 35px 0 auto;
+        margin: 28px 40px auto -18px;
       }
      /* немного выровняем текст подсказки */
     
@@ -1635,5 +1638,103 @@ h6 {
         line-height: 21px;
         color: rgba(255, 255, 255, 0.5);
         transform: rotate(-0.07deg);
+        margin-top: 69px;
     }
+
+/* Тут идет секция types of repair */
+
+    .section-types-of-repair {
+        height: 2030px;
+        margin: 0;
+    }
+
+    .types-of-repair-header {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-top: 83px;
+    }
+
+    .types-of-repair-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+       
+    }
+
+    .decor-ul {
+        position: relative;
+        width: 270px;
+        height: 241px;
+        background-color: white;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+        margin-top: -147px;
+        margin-left: 17px; 
+    }
+    
+    h4 {
+        font-size: 15px;
+        line-height: 138.6%;
+        color: #363636;
+        margin: 0;
+        padding: 21px 0 4px 28px;
+    }
+
+    .decor-ul ul {
+        margin: 0;
+        font-size: 13px;
+        line-height: 27px;
+        color: #959595;
+    }
+
+    .decor-img {
+        width: 340px;
+        height: 365px;
+        margin-left: 18px;
+    }
+
+    .decor-no-button {
+        background: #E3B873;
+        box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+        outline: 0;
+        border: 0;
+        color: white;
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 138.6%;
+        text-transform: uppercase;
+        text-align: center;
+        width: 190px;
+        height: 40px;    
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    .types-of-repair-div {
+        margin-bottom: 79px;
+    }
+
+    /* дальше пошла секция со шкафом */
+
+    .realize-header {
+        bottom: 355px;
+        position: relative;
+    }
+
+    .realize-container h5 {
+        display: none;
+    }
+
+    .realize-shkaf {
+        width: 340px;
+        height: 242px;
+        position: relative;
+        top: -331px;
+        margin: 0 auto;
+    }
+
 }
