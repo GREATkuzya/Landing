@@ -188,7 +188,7 @@ h3 {
     font-weight: normal;
     font-size: 20px;
     line-height: 28px;
-    text-align: center;
+    /* text-align: center; */
     text-transform: uppercase;
     color: black;
     margin: 0;
@@ -206,6 +206,7 @@ h3 {
     line-height: 27px;
     color: #FFFFFF;
     margin: 42px 0;
+    width: 300px;
 }
 
 .completed-projects-items-div span {
@@ -255,6 +256,7 @@ h3 {
     /* height: 679px; */
     width: 442px;
 }
+
 
 .apartment-area {
     display: flex;
@@ -348,7 +350,7 @@ h3 {
 }
 
 .videoz {
-    margin-top: -438px;
+    margin-top: -440px;
 }
 
 .ellipse {
@@ -1275,10 +1277,6 @@ h6 {
         display: none;
     }
 
-    * {
-        max-width: 375px;
-    }
-
     body {
         margin: 0;
         font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
@@ -1374,7 +1372,6 @@ h6 {
         border-radius: 2px;
         outline: 0;
         border: 0;
-        /* padding: 13px 33px; */
         margin-top: 26px;
         color: white;
         font-style: italic;
@@ -1382,14 +1379,18 @@ h6 {
         line-height: 15px;
         text-align: center;
         text-transform: uppercase;
-        cursor: pointer;
         width: 344px;
         height: 51px;
     }
 
-    .section-button:hover {
+    .button {
+            cursor: pointer;
+        }
+
+    .button:hover {
         background: none;
         border: 1px solid white;
+        background-color: none;
     }    
 
     .none {
@@ -1534,7 +1535,7 @@ h6 {
 
     .form_input {
         border: none;
-        border-bottom: 2px solid lightgrey;
+        border-bottom: 1px solid lightgrey;
         outline: none;
         padding-bottom: 5px;
         background-color: black;
@@ -1543,7 +1544,7 @@ h6 {
     }
     
     .form_input::placeholder {
-        color: rgb(0, 0, 0);
+        color: white;
         padding-bottom: 8px;
         font-family: Nunito Sans;
         font-style: normal;
@@ -1565,7 +1566,7 @@ h6 {
     .form_name {
         display: flex;
         flex-wrap: wrap;
-        width: 700px;
+        width: 340px;
         align-items: flex-end;
         justify-content: center;
     }
@@ -1659,7 +1660,6 @@ h6 {
 /* Тут идет секция types of repair */
 
     .section-types-of-repair {
-        height: 2030px;
         margin: 0;
     }
 
@@ -1736,8 +1736,8 @@ h6 {
     /* дальше пошла секция со шкафом */
 
     .realize-header {
-        bottom: 355px;
         position: relative;
+        bottom: 15px;
     }
 
     .realize-container h5 {
@@ -1748,7 +1748,7 @@ h6 {
         width: 340px;
         height: 242px;
         position: relative;
-        top: -331px;
+        top: 18px;
         margin: 0 auto;
         z-index: 1;
     }
@@ -1760,7 +1760,7 @@ h6 {
         width: 12px;
         height: 12px;
         position: relative;
-        bottom: 469px;
+        bottom: 119px;
         right: 4px;
         z-index: 1;
         cursor: pointer;
@@ -1773,7 +1773,7 @@ h6 {
         width: 12px;
         height: 12px;
         position: relative;
-        bottom: 469px;
+        bottom: 119px;
         left: 307px;
         z-index: 1;
         cursor: pointer;
@@ -1783,7 +1783,7 @@ h6 {
     .question-section {
         margin: 0 auto;
         position: relative;
-        top: 430px;   
+        bottom: 143px;
     }
 
  .question-form-input12 {
@@ -1804,6 +1804,7 @@ h6 {
     outline: none;
     padding-bottom: 5px;
 	background-color: black;
+    color: white;
 	}
 
 .question-form h3 {
@@ -1836,7 +1837,6 @@ h6 {
 	background-color: black;
     position: relative;
     padding-top: 131px;
-    bottom: 922px;
 }
 
 .question-form {
@@ -1941,8 +1941,9 @@ h6 {
 /* карта */
 
     .map-sect {
-       position: absolute;
-       width: 375px;
+        position: relative;
+        width: 375px;
+        bottom: 143px;
     }
 
     .map-header {
@@ -1961,7 +1962,7 @@ h6 {
         position: relative;
         align-items: center;
         background: black;
-        bottom: 493px;
+        /* bottom: 493px; */
         height: 525px;
     }
 
@@ -1990,4 +1991,9 @@ h6 {
     .section-realize {
         position: relative;
     }
+
+    main {
+        height: 5228px;
+    }
+
 }
