@@ -11,6 +11,10 @@ body {
     display: none;
 }
 
+.realize-more {
+    display: none;
+}
+
 .div-container {
     display: flex;
     justify-content: space-around;
@@ -1198,6 +1202,11 @@ h6 {
     opacity: 0.5;
 }
 
+.mail-img {
+    width: 28px;
+    height: 28px;
+}
+
 .map-header {
     margin-top: 62px;
     text-align: center;
@@ -1206,9 +1215,15 @@ h6 {
     font-size: 20px;
     line-height: 28px;
 }
+
+.map-iframe {
+    width: 925px;
+    height: 465px;
+}
+
 }
 @media screen and (max-width: 376px){
-    .our-clients, .question-section, .map-sect {
+    .our-clients {
         display: none;
     }
     
@@ -1735,6 +1750,244 @@ h6 {
         position: relative;
         top: -331px;
         margin: 0 auto;
+        z-index: 1;
     }
 
+    .less-svg {
+        background: #E3B873;
+        border: 12px solid #e3b873;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        position: relative;
+        bottom: 469px;
+        right: 4px;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .more-svg {
+        background: #E3B873;
+        border: 12px solid #e3b873;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        position: relative;
+        bottom: 469px;
+        left: 307px;
+        z-index: 1;
+        cursor: pointer;
+    }
+ /* тут пойдет карта и форма */
+
+    .question-section {
+        margin: 0 auto;
+        position: relative;
+        top: 430px;   
+    }
+
+ .question-form-input12 {
+    margin: 0 18px;
+}
+
+.question-form-input3 {
+    width: 340px;
+    margin: 0 auto;
+}
+
+
+.question-form-input12 input {
+    width: 340px;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 40px;
+    outline: none;
+    padding-bottom: 5px;
+	background-color: black;
+	}
+
+.question-form h3 {
+    padding: 35px 0 50px 0;
+    text-align: center;
+}
+
+.question-form-input3 input {
+    width: 340px;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+    margin: 0 auto;
+    outline: none;
+    padding-bottom: 5px;
+	background-color: black;
+	color: white;
+    
+}
+
+.question-form input::placeholder {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: white;
+}
+
+.question-form-div {
+	background-color: black;
+    position: relative;
+    padding-top: 131px;
+    bottom: 922px;
+}
+
+.question-form {
+    position: relative;
+  
+}
+
+.question-form label {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.question-button {
+    width: 340px;
+    height: 51px;
+    background: #E3B873;
+    box-shadow: 0px 10px 20px rgba(227, 184, 115, 0.1);
+    margin: 0 auto;
+    font-size: 13px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+/* оформление еще одного чекбокса */
+
+.checkbox-container-question {
+    display: flex;
+    position: relative;
+    /* justify-content: center;    не работает долго разбираться почему, просто поправлю влево */
+    left: 14px;
+    cursor: pointer;
+    margin: 23px auto 67px auto;
+}
+
+/* оформляем кастомный чекбокс */
+
+.checkmark-question {
+    position: absolute;
+    top: 0;
+    height: 18px;
+    width: 18px;
+    border: 2px solid #E3B873;
+    cursor: pointer;
+    /* border-radius: 2px; */
+    background: white;
+}
+/* При наведении мыши добавляем интерактивности*/
+.checkbox-container-question:hover input ~ .checkmark-question {
+    background-color: lightgrey;
+}
+  
+/* Когда галочка должна стоять - оформляем наш кастомный элемент должным образом*/
+.checkbox-container-question input:checked ~ .checkmark-question {
+    /* border: 2px solid #E3B873; */
+    background-color: #E3B873;
+}
+  
+/* внутренний индикатор для нашего чекбокса в ненажатом состоянии */
+.checkmark-question:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* показываем внутренний индикатор при нажатии */
+.checkbox-container-question input:checked ~ .checkmark-question:after {
+    display: block;
+}
+  
+/* и задаем стиль для внутреннего индикатора  - позволяет креативить по полной */
+.checkbox-container-question .checkmark-question:after {
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    /* border-radius: 2px; */
+}
+
+.checkbox-container-question label {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 163.68%;
+    color: #FFFFFF;
+}
+
+#our_checkbox_label-question  {
+    margin-left: 10px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+/* карта */
+
+    .map-sect {
+       position: absolute;
+       width: 375px;
+    }
+
+    .map-header {
+        font-size: 18px;
+        line-height: 138.6%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #E3B873;
+        }
+
+    .map-div {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        margin: 0 auto;
+        position: relative;
+        align-items: center;
+        background: black;
+        bottom: 493px;
+        height: 525px;
+    }
+
+    .map-iframe {
+        width: 340px;
+        height: 225px;
+    }
+
+    .link-img {
+        display: flex;
+        justify-content: space-between;
+        width: 100px;
+        margin: 0 auto;
+        order: -1;
+    }
+    
+    .link-img a:hover {
+        opacity: 0.5;
+    }
+
+    .mail-img {
+        width: 39px;
+        height: 39px;
+    }
+
+    .section-realize {
+        position: relative;
+    }
 }
