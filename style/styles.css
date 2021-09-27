@@ -1241,7 +1241,7 @@ h6 {
         display: none;
     }
 
-    .videoz, .ellipse, .triangle {
+    .videoz, .ellipse, .triangle, .chair-div {
         display: none;
     }
 
@@ -1783,7 +1783,7 @@ h6 {
     .question-section {
         margin: 0 auto;
         position: relative;
-        bottom: 143px;
+        margin-top: -143px;
     }
 
  .question-form-input12 {
@@ -1941,10 +1941,9 @@ h6 {
 /* карта */
 
     .map-sect {
-        position: relative;
-        width: 375px;
-        bottom: 143px;
-    }
+    width: 375px;
+      
+}
 
     .map-header {
         font-size: 18px;
@@ -1992,8 +1991,8 @@ h6 {
         position: relative;
     }
 
-    main {
+    /* main {
         height: 5228px;
-    }
+    } */
 
 }
