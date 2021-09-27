@@ -70,7 +70,7 @@ header, footer {
     margin: 0 auto;
     color: white;
     font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
-    font-style: italic;
+    font-style: normal;
     font-weight: normal;
     font-size: 11px;
     line-height: 15px;
@@ -82,6 +82,7 @@ header, footer {
 .request-button {
     width: 161px;
     height: 37px;
+    font-style: italic;
 }
 
 .button:hover {
@@ -111,6 +112,8 @@ header, footer {
 .section-button {
     width: 207px;
     height: 51px;
+    font-style: italic;
+    margin-right: 16px;
 }
 
 .header-number a {
@@ -279,6 +282,7 @@ h3 {
 .completed-projects-items-div {
     height: 80px;
     width: 213px;
+    margin-top: 24px;
 }
 
 .container-completed-projects-div {
@@ -517,6 +521,7 @@ input, label{
     display:flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .types-of-repair-img {
@@ -993,7 +998,7 @@ h6 {
     margin: 0;
     position: relative;
     color: white;
-    top: 89px;
+    top: 63px;
     background: #E3B873;
     box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
     font-family: Yeseva One;
@@ -1092,7 +1097,7 @@ h6 {
 	background-color: black;
     position: relative;
     margin: 0 auto;
-    bottom: 221px;
+    bottom: 207px;
 }
 
 .question-form {
@@ -1727,9 +1732,8 @@ h6 {
     }
 
     .decor-ul ul {
-        margin: 0;
         font-size: 13px;
-        line-height: 27px;
+        line-height: 22px;
         color: #959595;
     }
 
