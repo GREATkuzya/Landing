@@ -66,7 +66,7 @@ header, footer {
     border-radius: 2px;
     outline: 0;
     border: 0;
-    padding: 13px 33px;
+    /* padding: 13px 33px; */
     margin: 0 auto;
     color: white;
     font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
@@ -79,8 +79,15 @@ header, footer {
     cursor: pointer;
 }
 
+.request-button {
+    width: 161px;
+    height: 37px;
+}
+
 .button:hover {
-    background-color: lightgrey;
+    background: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
 }
 
 .button-prozr {
@@ -90,7 +97,6 @@ header, footer {
     outline: 0;
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
-    /* padding: 13px 33px; */
     margin: 0 auto;
     color: white;
     font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
@@ -180,6 +186,7 @@ h2 {
     text-transform: uppercase;
     color: #E3B873;
     position: relative;
+    margin: 0;
 }
 
 h3 {
@@ -206,7 +213,7 @@ h3 {
     line-height: 27px;
     color: #FFFFFF;
     margin: 42px 0;
-    width: 300px;
+    width: 445px;
 }
 
 .completed-projects-items-div span {
@@ -229,8 +236,8 @@ h3 {
     display: flex;
     list-style: none;
     padding-top: 107px;
-    padding-bottom: 50px;
-    padding-left: 520px;
+    padding-bottom: 45px;
+    padding-left: 549px;
 }
 
 .table-comleted-projects li > a {
@@ -242,7 +249,7 @@ h3 {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
     text-decoration: none;
-    margin-right: 80px;
+    margin-right: 70px;
 }
 
 .table-comleted-projects li > a:hover {
@@ -253,7 +260,7 @@ h3 {
 .completed-projects-flex {
     display: flex;
     flex-direction: column;
-    /* height: 679px; */
+    justify-content: space-between;
     width: 442px;
 }
 
@@ -278,14 +285,14 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    max-width: 1440px;
+    max-width: 1262px;
     margin: 0 auto;
 }
 
 .completed-projects-arrows {
 	display: flex;
     margin-top: 25px;
+    cursor: pointer;
 }
 
 .line {
@@ -347,6 +354,7 @@ h3 {
     line-height: 37px;
     text-align: center;
     color: #363636;
+    width: 652px;
 }
 
 .videoz {
@@ -477,6 +485,12 @@ h3 {
 
 input, label{
     display:block;
+}
+
+.submit-button:hover {
+    color: black;
+    border: 1px solid #E3B873;
+    border-radius: 2px;
 }
 
 .input-label {
@@ -635,6 +649,8 @@ h5 {
 
 .button-request {
 	transform: translate(120px, 29px);
+    padding: 13px 33px;
+    
 }
 
 .checkbox-container-request {
@@ -842,7 +858,7 @@ h5 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .american-ul li {
@@ -1076,7 +1092,7 @@ h6 {
 	background-color: black;
     position: relative;
     margin: 0 auto;
-    bottom: 268px;
+    bottom: 221px;
 }
 
 .question-form {
@@ -1425,6 +1441,7 @@ h6 {
         text-align: center;
         color: #FFFFFF;
         margin-top: 22px;
+        width: 340px;
   }
     .apartment-area {
         display: flex;
@@ -1454,10 +1471,10 @@ h6 {
         margin-top: 36px;
         margin-left: 18px;
     }
-
-    .completed-projects-div img:nth-child(2) {
-        display: none;
-    }
+/* не помню зачем сделал этот псевдокласс */
+    /* .completed-projects-div img:nth-child(2) {
+        display: none; 
+    }*/
 
     .img-chair {
         display: block;
@@ -1467,6 +1484,17 @@ h6 {
         height: 241px;
         margin: 0 auto;
     }
+
+    .less-chair-svg {
+        bottom: 149px;
+        left: 252px;
+    }
+
+    .more-chair-svg {
+        bottom: 149px;
+        left: 14px;
+    }
+
   /* тут пошла секция online control */
 
     .section-video {
@@ -1529,6 +1557,7 @@ h6 {
         line-height: 169.8%;
         text-align: center;
         color: #FFFFFF;
+        width: 652px;
     }
 
     /* тут начало первой формы */
@@ -1760,10 +1789,15 @@ h6 {
         width: 12px;
         height: 12px;
         position: relative;
-        bottom: 119px;
-        right: 4px;
+        /* bottom: 119px;
+        right: 4px; */
         z-index: 1;
         cursor: pointer;
+    }
+
+    .less-shkaf-svg {
+        bottom: 119px;
+        right: 4px;
     }
 
     .more-svg {
@@ -1773,11 +1807,17 @@ h6 {
         width: 12px;
         height: 12px;
         position: relative;
-        bottom: 119px;
-        left: 307px;
+        /* bottom: 119px;
+        left: 307px; */
         z-index: 1;
         cursor: pointer;
     }
+
+    .more-shkaf-svg {
+        bottom: 119px;
+        left: 307px;
+    }
+
  /* тут пойдет карта и форма */
 
     .question-section {
