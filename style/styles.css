@@ -1,8 +1,22 @@
 @media screen and (min-width: 376px){
 
 body {
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
     margin: 0;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.img-chair {
+    display: none;
+}
+
 .play-video {
     display: none;
 }
@@ -30,9 +44,6 @@ body {
 
 .header-table li > a {
     display: inline; 
-    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 11px;
     line-height: 15px;
     color: #FFFFFF;
@@ -49,9 +60,6 @@ header, footer {
     display: flex;
     justify-content: space-around;
     background: #131313;
-    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 11px;
     line-height: 15px;
     text-transform: uppercase;
@@ -66,12 +74,8 @@ header, footer {
     border-radius: 2px;
     outline: 0;
     border: 0;
-    /* padding: 13px 33px; */
     margin: 0 auto;
     color: white;
-    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 11px;
     line-height: 15px;
     text-align: center;
@@ -91,24 +95,6 @@ header, footer {
     border-radius: 2px;
 }
 
-.button-prozr {
-    background: none;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    border-radius: 2px;
-    outline: 0;
-    border: 1px solid #FFFFFF;
-    box-sizing: border-box;
-    margin: 0 auto;
-    color: white;
-    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 15px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 .section-button {
     width: 207px;
     height: 51px;
@@ -119,9 +105,6 @@ header, footer {
 .header-number a {
     margin-right: 45px;
     color: #E3B873;
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 11px;
     line-height: 15px;
     text-align: right;
@@ -145,14 +128,10 @@ header, footer {
 }
 
 .section-div-container-header {
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 40px;
     line-height: 53px;
     text-transform: uppercase;
     color: #FFFFFF;
-    /* padding: 194px; */
     margin: 0px;
 }
 
@@ -161,9 +140,6 @@ header, footer {
 }
 
 .section-div-container p {
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 22px;
     line-height: 36px;
     color: #FFFFFF;
@@ -180,9 +156,6 @@ header, footer {
 } 
 
 h2 {
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 27px;
     line-height: 37px;
     letter-spacing: -0.07em;
@@ -193,12 +166,8 @@ h2 {
 }
 
 h3 {
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 28px;
-    /* text-align: center; */
     text-transform: uppercase;
     color: black;
     margin: 0;
@@ -209,9 +178,6 @@ h3 {
 }
 
 .completed-projects p {
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 27px;
     color: #FFFFFF;
@@ -220,9 +186,6 @@ h3 {
 }
 
 .completed-projects-items-div span {
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 13px;
     line-height: 21px;
     color: #FFFFFF;
@@ -314,10 +277,7 @@ h3 {
 
 .dot {
 	margin: 0 15px;
-}
-
-.img-chair {
-    display: none;
+    opacity: 0.3;
 }
 
 .section-video {
@@ -327,6 +287,10 @@ h3 {
 .camera {
     display: flex;
     margin: 15px;
+}
+
+.dot:hover {
+    opacity: 1;
 }
 
 .div-container-video {
@@ -351,9 +315,6 @@ h3 {
 }
 
 .div-container-video p {
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 37px;
     text-align: center;
@@ -388,9 +349,6 @@ h3 {
 .form_input::placeholder {
     color: rgb(0, 0, 0);
     padding-bottom: 8px;
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 23px;
   }
@@ -421,9 +379,6 @@ h3 {
  #our_checkbox_label  {
    margin-left:30px;
    margin-top: 4px;
-   font-family: Nunito Sans;
-   font-style: normal;
-   font-weight: normal;
    font-size: 14px;
    line-height: 23px;
  
@@ -448,6 +403,7 @@ h3 {
     border: 2px solid #E3B873;
     cursor: pointer;
     background: white;
+    border-radius: 2px;
 }
 /* При наведении мыши добавляем интерактивности*/
 .checkbox-container:hover input ~ .checkmark {
@@ -478,8 +434,8 @@ h3 {
     width: 18px;
     height: 18px;
     background: #E3B873;
-    /* border-radius: 2px; */
 }
+
 .galka {
 	z-index: 1;
 	position: absolute;
@@ -498,13 +454,9 @@ input, label{
 }
 
 .input-label {
-	font-family: Nunito Sans;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 13px;
 	line-height: 21px;
 	color: rgba(54, 54, 54, 0.5);
-	transform: rotate(-0.07deg);
 }
 
 .section-types-of-repair {
@@ -547,22 +499,15 @@ input, label{
 }
 
 h4 {
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 25px;
     color: #363636;
     margin: 0;
-    
     padding-top: 25px;
     padding-left: 34px;
 }
 
 .decor-ul ul {
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 13px;
     line-height: 27px;
     color: #959595;
@@ -585,16 +530,11 @@ h4 {
     height: 54px;    
 }
 
-/* для второй формы стили ПОЧИСТИТЬ!!! */
-
 input, label{
     display:block;
 }
 
 .input-label-request {
-	font-family: Nunito Sans;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 13px;
 	line-height: 21px;
 	color: rgba(255, 255, 255, 0.5);
@@ -613,15 +553,9 @@ input, label{
 }
 
 .form_input-request::placeholder {
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 23px;
-/* identical to box height */
-
-
-color: #FFFFFF;
+    color: #FFFFFF;
   }
 
 #submit {
@@ -673,9 +607,6 @@ h5 {
    margin-left:30px;
    margin-top: 6px;
    color: white;
-   font-family: Nunito Sans;
-   font-style: normal;
-   font-weight: normal;
    font-size: 14px;
    line-height: 23px;
  }
@@ -698,7 +629,7 @@ h5 {
     width: 18px;
     border: 2px solid #E3B873;
     cursor: pointer;
-    /* border-radius: 2px; */
+    border-radius: 2px;
     background: white;
 }
 /* При наведении мыши добавляем интерактивности*/
@@ -739,9 +670,6 @@ h5 {
 	left: 4px;
 	top: 4px;
 }
-
-/* поудалять лишние стили сверху */
-
 
 .advantage-form {
     display: flex;
@@ -795,9 +723,6 @@ h5 {
 }
 
 .advantage p {
-	font-family: Nunito Sans;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 14px;
 	line-height: 19px;
 	vertical-align: middle;
@@ -816,9 +741,6 @@ h5 {
 }
 
 .help-save p {
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 26px;
     color: #E3B873;
@@ -867,9 +789,6 @@ h5 {
 }
 
 .american-ul li {
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 38px;
     color: #FFFFFF;
@@ -942,9 +861,6 @@ h5 {
 }
 
  .our-clients-div p {
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 29px;
     text-align: center;
@@ -969,9 +885,6 @@ h5 {
 }
 
 .client p {
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 13px;
     line-height: 180%;
     color: #959595;
@@ -1023,7 +936,7 @@ h6 {
     margin-left: 20px;
 }
 
-/* тут пошла последняя  с формой и картой */
+/* тут пошла последняя секция  с формой и картой */
 
 .question-section {
     max-width: 1440px;
@@ -1036,7 +949,8 @@ h6 {
     display: flex;
     flex-wrap: nowrap;
     opacity: .05;
-    /* color: #E6E6E6; */
+    margin-bottom: -15px;
+    margin-top: -50px;
 }
 
 .question-form-input12 {
@@ -1053,10 +967,8 @@ h6 {
 
 .question-form-input12 input {
     width: 231px;
-    /* margin-left: 58px; */
     border: none;
     border-bottom: 2px solid rgba(255, 255, 255, 0.15);
-    /* margin: 0; */
 	margin-bottom: 40px;
     outline: none;
     padding-bottom: 5px;
@@ -1082,9 +994,6 @@ h6 {
 }
 
 .question-form input::placeholder {
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 23px;
     color: white;
@@ -1130,7 +1039,7 @@ h6 {
     width: 18px;
     border: 2px solid #E3B873;
     cursor: pointer;
-    /* border-radius: 2px; */
+    border-radius: 2px;
     background: white;
 }
 /* При наведении мыши добавляем интерактивности*/
@@ -1167,9 +1076,6 @@ h6 {
 }
 
 .checkbox-container-question label {
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 163.68%;
     color: #FFFFFF;
@@ -1177,9 +1083,6 @@ h6 {
 
 #our_checkbox_label-question  {
     margin-left: 10px;
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 23px;
 }
@@ -1209,7 +1112,6 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     top: 215px;
 }
 
@@ -1246,58 +1148,11 @@ h6 {
 
 }
 @media screen and (max-width: 376px){
-    .our-clients {
+    .our-clients, .header-table, .table-comleted-projects, .completed-projects-arrows, .videoz, .ellipse, .triangle, .chair-div,
+    .advantage-form, .help-save, .american-ul, .img-real, .our-clients, footer, .request-button, .sky-img {
         display: none;
     }
     
-    .header-table {
-        display: none;
-    }
-
-    .table-comleted-projects {
-        display: none;
-    }
-
-    .completed-projects-arrows {
-        display: none;
-    }
-
-    .videoz, .ellipse, .triangle, .chair-div {
-        display: none;
-    }
-
-    .advantage-form {
-        display: none;
-    }
-
-    .help-save {
-        display: none;
-    }
-
-    .american-ul {
-        display: none;
-    }
-
-    .img-real {
-        display: none;
-    }
-
-    .our-clients {
-        display: none;
-    }
-
-    footer {
-        display: none;
-    }
-
-    .request-button {
-        display: none;
-    }
-
-    .sky-img {
-        display: none;
-    }
-
     body {
         margin: 0;
         font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
@@ -1405,7 +1260,7 @@ h6 {
     }
 
     .button {
-            cursor: pointer;
+        cursor: pointer;
         }
 
     .button:hover {
@@ -1500,12 +1355,12 @@ h6 {
 
     .less-chair-svg {
         bottom: 149px;
-        left: 252px;
+        left: -24px;
     }
 
     .more-chair-svg {
-        bottom: 149px;
-        left: 14px;
+        bottom: 149px;       
+        left: 288px;
     }
 
   /* тут пошла секция online control */
@@ -1588,10 +1443,7 @@ h6 {
     .form_input::placeholder {
         color: white;
         padding-bottom: 8px;
-        font-family: Nunito Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
+         font-size: 14px;
         line-height: 23px;
       }
     
@@ -1648,6 +1500,7 @@ h6 {
         border: 2px solid #E3B873;
         cursor: pointer;
         background: white;
+        border-radius: 2px;
     }
     /* При наведении мыши добавляем интерактивности*/
     .checkbox-container:hover input ~ .checkmark {
@@ -1801,8 +1654,6 @@ h6 {
         width: 12px;
         height: 12px;
         position: relative;
-        /* bottom: 119px;
-        right: 4px; */
         z-index: 1;
         cursor: pointer;
     }
@@ -1819,15 +1670,13 @@ h6 {
         width: 12px;
         height: 12px;
         position: relative;
-        /* bottom: 119px;
-        left: 307px; */
         z-index: 1;
         cursor: pointer;
     }
 
     .more-shkaf-svg {
         bottom: 119px;
-        left: 307px;
+        left: 305px;
     }
 
  /* тут пойдет карта и форма */
@@ -1877,9 +1726,6 @@ h6 {
 }
 
 .question-form input::placeholder {
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 23px;
     color: white;
@@ -1936,7 +1782,7 @@ h6 {
     width: 18px;
     border: 2px solid #E3B873;
     cursor: pointer;
-    /* border-radius: 2px; */
+    border-radius: 2px;
     background: white;
 }
 /* При наведении мыши добавляем интерактивности*/
@@ -1969,13 +1815,10 @@ h6 {
     width: 18px;
     height: 18px;
     background: #E3B873;
-    /* border-radius: 2px; */
+    border-radius: 2px;
 }
 
 .checkbox-container-question label {
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 163.68%;
     color: #FFFFFF;
@@ -1983,9 +1826,6 @@ h6 {
 
 #our_checkbox_label-question  {
     margin-left: 10px;
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 23px;
 }
