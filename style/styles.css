@@ -516,18 +516,16 @@ h4 {
 .decor-no-button {
     background: #E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    outline: 0;
-    border: 0;
     color: white;
     font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 50px;
     text-transform: uppercase;
     text-align: center;
     width: 228px;
     height: 54px;    
+    position: relative;
+    bottom: 4px;
 }
 
 input, label{
@@ -1139,6 +1137,16 @@ h6 {
     color: #E3B873;
     font-size: 20px;
     line-height: 28px;
+    width: 550px;
+}
+
+.map-header a {
+    text-decoration: none;
+    color: #E3B873;
+}
+
+.map-header a:hover {
+    color: white;
 }
 
 .map-iframe {
@@ -1208,10 +1216,10 @@ h6 {
     .main-section::before {
         content: '';
         position: absolute;
-        top: 0;
+        top: 0px;
         left: 0;
         right: 0;
-        bottom: 0;
+        bottom: 0px;
         background-color: rgba(0, 0, 0, 0.7);
     }
 
@@ -1289,7 +1297,7 @@ h6 {
     /* тут пошла секция .completed-projects */
 
     .completed-projects {
-        background-color: black;
+        background: #131313;
         margin: 0;
         height: 727px;
     }
@@ -1367,7 +1375,7 @@ h6 {
 
     .section-video {
         height: 825px;
-        background-color: black;
+        background: #131313;
         margin: 0;
     }
 
@@ -1425,7 +1433,7 @@ h6 {
         line-height: 169.8%;
         text-align: center;
         color: #FFFFFF;
-        width: 652px;
+        width: 340px;
     }
 
     /* тут начало первой формы */
@@ -1435,7 +1443,7 @@ h6 {
         border-bottom: 1px solid lightgrey;
         outline: none;
         padding-bottom: 5px;
-        background-color: black;
+        background: #131313;
         color: white;
         width: 340px;
     }
@@ -1704,7 +1712,7 @@ h6 {
     margin-bottom: 40px;
     outline: none;
     padding-bottom: 5px;
-	background-color: black;
+	background-color: #131313;
     color: white;
 	}
 
@@ -1720,7 +1728,7 @@ h6 {
     margin: 0 auto;
     outline: none;
     padding-bottom: 5px;
-	background-color: black;
+	background-color: #131313;
 	color: white;
     
 }
@@ -1732,7 +1740,7 @@ h6 {
 }
 
 .question-form-div {
-	background-color: black;
+	background-color: #131313;
     position: relative;
     padding-top: 131px;
 }
@@ -1852,13 +1860,22 @@ h6 {
         margin: 0 auto;
         position: relative;
         align-items: center;
-        background: black;
+        background-color: #131313;
         height: 525px;
     }
 
     .map-iframe {
         width: 340px;
         height: 225px;
+    }
+
+    .map-header a {
+        text-decoration: none;
+        color: #E3B873;
+    }
+
+    .map-header a:hover {
+        color: white;
     }
 
     .link-img {
