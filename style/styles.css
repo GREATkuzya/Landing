@@ -1,5 +1,25 @@
 @media screen and (min-width: 376px){
 
+.hidden {
+width: 0;
+height: 0;
+ opacity: 0;
+ /* transition: display 800ms ease; */
+}
+
+.active {
+    display: block;
+    opacity: 1;
+    transition: opacity 800ms ease;
+}
+
+.chair-div {
+    width: 679px;
+    height: 482px;
+    display: flex;
+    justify-items: center;
+}
+
 body {
     font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
@@ -192,7 +212,7 @@ h3 {
 }
 
 .completed-projects {
-    background-color: black;
+    background-color: #131313;
     margin: 0;
     height: 1074px;
 }
@@ -216,6 +236,7 @@ h3 {
     color: rgba(255, 255, 255, 0.3);
     text-decoration: none;
     margin-right: 70px;
+    cursor: pointer;
 }
 
 .table-comleted-projects li > a:hover {
@@ -242,6 +263,15 @@ h3 {
     justify-content: space-around;
 }
 
+.completed-projects-header {
+    display: flex;
+}
+
+.completed-projects-header img {
+    margin-left: 10px;
+    margin-top: 38px;
+}
+
 .completed-projects-items-div {
     height: 80px;
     width: 213px;
@@ -255,6 +285,7 @@ h3 {
     max-width: 1262px;
     margin: 0 auto;
 }
+
 
 .completed-projects-arrows {
 	display: flex;
